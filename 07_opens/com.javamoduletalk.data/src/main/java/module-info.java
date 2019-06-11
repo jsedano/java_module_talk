@@ -1,3 +1,3 @@
-open module com.javamoduletalk.data {
+module com.javamoduletalk.data {
     exports com.javamoduletalk.data;
 }

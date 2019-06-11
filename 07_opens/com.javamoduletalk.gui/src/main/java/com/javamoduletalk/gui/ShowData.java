@@ -11,8 +11,8 @@ public class ShowData {
         Data data = new Data();
         Field f = data.getClass().getDeclaredField("data");
         f.setAccessible(true);
-        f.set(data, "Esto se añadio con reflection");
-       
+        f.set(data, data.getData()+ ", esto se añadio con reflection");
+
         JOptionPane.showMessageDialog(null, data.getData(),"Data",JOptionPane.PLAIN_MESSAGE);
     }
 
